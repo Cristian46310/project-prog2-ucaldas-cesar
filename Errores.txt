@@ -1,0 +1,11 @@
+A lo largo del desarrollo me encontre con problemas como la sobreescritura en el CSV, pero fueron solucionados a partir de inicializar
+el arraylist al inicio de cada metodo, tambien encontre errores como valores nulos que fueron solucionados poniendo algo dentro del csv 
+para que pueda ser leido sin ningun problea y no suelte el error null.
+
+Durante la fase de desarrolo pense en diversas en donde primero empeze con la creacion de los metodos del paciente, luego con los del 
+nutricionista y despues las comidas y planes de dietas, que decidi juntar en uno solo, para que el nutricionista pueda generar con el mismo Id
+de la comida el plan de dieta.
+
+propuestas: Incluir mas metodos CSV para poder leer archivos como comidas (carnes, verduras, harinas, etc), con el objetivo de actualizar
+a mas comidas de este tipo, y poder gestionar de una mejor manera el enlace entre el nutricionista y paciente mediante el uso de Csv, 
+para que a la hora de la impresion se logre que el paciente muestre a que nutricionista esta afiliado y cual es su plan dieta y sus comidas.

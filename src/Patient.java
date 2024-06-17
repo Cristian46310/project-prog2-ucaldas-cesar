@@ -1,6 +1,7 @@
-import java.util.ArrayList;
-import java.util.List;
 
+/**
+ * The Patient class represents a patient with their medical details.
+ */
 public class Patient {
     private int patientId=0;
     private String name=null;
@@ -8,7 +9,10 @@ public class Patient {
     private int weight=0;
     private int height=0;
     private String preexistingConditions=null;
-
+    
+    /**
+     * Constructor to initialize a Patient object with given parameters.
+     */
     public Patient(int patientId,String name,int age, int weight, int height, String preexistingConditions){
         this.patientId=patientId;
         this.name=name;
@@ -19,9 +23,9 @@ public class Patient {
     }
 
     public Patient() {
-        //TODO Auto-generated constructor stub
     }
 
+    //Here are the setters and getters to use in the main methods
     public int getPatientId() {
         return patientId;
     }
@@ -58,61 +62,13 @@ public class Patient {
     public void setPreexistingConditions(String newpreexistingConditions) {
         preexistingConditions = newpreexistingConditions;
     }
+
+    @Override
+    public String toString() {
+        return "Patient [patientId=" + patientId + ", name=" + name + ", age=" + age + ", weight=" + weight
+                + ", height=" + height + ", preexistingConditions=" + preexistingConditions + "]";
+    }
     
-    // public ArrayList<Patient> getPatients() {
-    //     return patients;
-    // }
-
-    // public void setPatients(ArrayList<Patient> patients) {
-    //     this.patients = patients;
-    // }
-    // public boolean registerPatient(Patient newPatient){
-    //     Patient patient=getPatient(newPatient.getPatientId());
-    //     if(patient == null){
-    //         patients.add(newPatient);
-    //         return true;
-    //     }
-    //     return false;
-        
-    // }
-
-    // public Patient getPatient(int anId){
-    //     for(Patient patient: patients){
-    //         if(patient.getPatientId()==anId){
-    //             return patient;
-    //         }
-    //     }
-    //     return null;
-    // }
-
-    // public List<Patient> getAllPatients(){
-    //     return patients;
-
-    // }
-
-    // public void removePatient(int id){
-    //     Patient patientRemove=null;
-    //     for(Patient patient: patients){
-    //         if(patient.getPatientId()==id){
-    //             patientRemove = patient;
-    //             break;
-
-    //         }
-    //     }
-    //     if(patientRemove!=null){
-    //         patients.remove(patientRemove);
-    //     }
-
-    // }
-
-    // public Patient updatePatients(Patient patientUpdate,int id){
-    //     removePatient(id);
-    //     patientUpdate.setPatientId(id);
-    //     registerPatient(patientUpdate);
-        
-    //     return patientUpdate;
-    // }
-
 }    
  
         

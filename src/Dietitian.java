@@ -1,25 +1,25 @@
-import java.util.ArrayList;
-
+/**
+ * The Dietitian class represents a dietitian with their professional details.
+ */
 public class Dietitian {
+    // Attributes of the Dietitian class
 private int dietitianId=0;
 private String name=null;
 private String Speciality=null;
-// private ArrayList<Dietitian> dietitians=null;
 
+//Constructor for creating a new Dietitian with specified details.
 
-// public Dietitian(){
-//  dietitians=new ArrayList<>();
-
-// }
 public Dietitian(int dietitianId, String name, String Speciality){
     this.dietitianId=dietitianId;
     this.name=name;
     this.Speciality=Speciality;
 }
 
+//Default constructor for Dietitian.
 public Dietitian() {
-    //TODO Auto-generated constructor stub
 }
+
+//Here are the setters and getters to use in the main methods
 
 public int getDietitianId() {
     return dietitianId;
@@ -38,30 +38,5 @@ public String getSpeciality() {
 }
 public void setSpeciality(String newspeciality) {
     Speciality = newspeciality;
-}
-// public ArrayList<Dietitian> getDietitians() {
-//     return dietitians;
-// }
-// public void setDietitians(ArrayList<Dietitian> dietitians) {
-//     this.dietitians = dietitians;
-// }
-
-// public boolean registerDietitian(Dietitian newdietitian){
-//     Dietitian dietitian=getDietitian(newdietitian.getDietitianId());
-//     if(dietitian == null){
-//         dietitians.add(newdietitian);
-//         return true;
-//     }
-//     return false;
-
-// }
-
-// public Dietitian getDietitian(int anId){
-//     for(Dietitian dietitian: dietitians){
-//         if(dietitian.getDietitianId()==anId){
-//             return dietitian;
-//         }
-//     }
-//     return null;
-// }
+  }
 }
